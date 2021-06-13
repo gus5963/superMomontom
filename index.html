@@ -3,14 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>PHS Momontom</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <form class="js-dday">
-      <input class="calendar" type="date" />
-      <input class="dateBtn" type="button" value="date" />
-      <p class="getDate"></p>
-    </form>
     <div class="js-clock"><h1 class="clock"></h1></div>
     <form class="js-name">
       <input type="text" placeholder="What is your name?" />
@@ -19,18 +14,21 @@
     <form class="js-todoForm">
       <input type="text" placeholder="Write a to do" />
     </form>
-    <div>
-      <p>PENDING</p>
-      <ul class="js-todoList"></ul>
+    <div class="list">
+      <div>
+        <p>PENDING</p>
+        <ul class="js-todoList"></ul>
+      </div>
+      <div>
+        <p>FINISHED</p>
+        <ul class="js-finList"></ul>
+      </div>
     </div>
-    <div>
-      <p>FINISHED</p>
-      <ul class="js-finList"></ul>
-    </div>
+
     <span class="js-weather"></span>
     <script src="js/name.js"></script>
     <script src="js/clock.js"></script>
-    <script src="js/dday.js"></script>
+
     <script src="js/todo.js"></script>
     <script src="js/bg.js"></script>
     <script src="js/weather.js"></script>
